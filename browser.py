@@ -135,11 +135,12 @@ def show(body):
         elif not in_tag:
             print(c, end="")
     
+# Main Function
+
 if __name__ == "__main__":
     import sys
     
     browser = Browser()
-    
     if len(sys.argv) < 2:
         default_file = 'file:///Users/aryan/Desktop/browser_eng/browser.py'
         browser.load(URL(default_file))
