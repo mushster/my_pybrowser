@@ -118,6 +118,7 @@ class URL:
             proto=socket.IPPROTO_TCP
         )
         
+        #connect
         s.connect((self.host, self.port))
         
         if self.port == -1:
